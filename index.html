@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,38 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="css/img/icons/to-do-list.png" type="image/x-icon">
 </head>
+
 <body>
+    <header>Cabeçalho</header>
     <div class="conteudo">
-        <div class="addTasks">Adicionar Taks</div>
-        <div class="currentTasks">Tasks Disponiveis</div>
-        <div class="completedTasks">Tasks Completas</div>
+        <div class="addTasks">
+            <form class="taskAdd">
+                <label for="task">Tarefa:</label>
+                <input type="text" class="text-task">
+                <label for="data">Data conclusão:</label>
+                <input type="date" name="" id="data">
+                <input class="btnTask" type="button" value="Adicionar Tarefa">
+            </form>
+        </div>
+        <div class="currentTasks">
+            <div class="Task">
+                <p>Faça carinho no nosso pet</p>
+                <P>Prazo 23/02/2026</P>
+            </div>
+        </div>
+        <div class="completedTasks">
+            <p>Tasks Completas</p>
+            <p>Leve nosso pet para passear</p>
+            <P>concluida em 23/02/2026</P>
+        </div>
+        <div class="esgotedTasks">
+            <p></p>
+            <p>Faça carinho no nosso pet</p>
+            <P>Prazo encerrou em: 23/02/2026</P>
+        </div>        
     </div>
+    <footer>Pézinho</footer>
+
 </body>
+
 </html>
