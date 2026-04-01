@@ -49,7 +49,7 @@ body{
 header{
     display: flex;
     align-items: center;
-    background-color: var(--cor-container);
+    background-color: var(--color-surface);
     width: 50%;
     height: 80px;
     border-bottom-left-radius: 5px;
@@ -59,7 +59,7 @@ header{
 }
 
 footer{
-    background-color: var(--cor-container);
+    background-color: var(--color-surface);
     width: 50%;
     height: 100px;
     border-top-left-radius: 5px;
@@ -78,13 +78,14 @@ nav{
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    color: var(--color-text);
     
 }
 .conteudo{
     display: flex;
     flex-direction: column;    
     justify-content: center;
-    background-color: var(--cor-textosecundario);
+    background-color: var(--color-bg);
     width: 50%;
     gap: 30px;
     padding: 10px;
@@ -99,6 +100,7 @@ nav{
     background-color: var(--cor-container);
     border-radius: 5px;
     box-shadow: 2px black;
+    color: var(--color-text);
 }
 .currentTasks{
     /* border: 1px blue solid; */
@@ -127,9 +129,9 @@ nav{
 .btnTask{
     height: 25px;
     border-radius: 5px ;
-    background-color: red;
-    color: white;
-    padding: 5px;
+    /* background-color: red; */
+    color: var(--color-black);
+    padding: 0px 5px;
 }
 
 .btnTask:hover{
@@ -138,8 +140,17 @@ nav{
 
 .text-task{
     width: 50%;
-    height: 30px;
+    height: 25px;
     border-radius: 5px;
-    border: 1px green solid;
+    padding: 0px 5px;
+
+}
+
+.calendario{
     background-color: red;
+}
+.Task{
+    background-color: var(--color-success);
+    margin: 5px;
+    border: 1px solid red;
 }

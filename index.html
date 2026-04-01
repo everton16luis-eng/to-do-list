@@ -7,6 +7,7 @@
     <title>To-Do-List</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="css/img/icons/to-do-list.png" type="image/x-icon">
+    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -29,10 +30,10 @@
                 <input type="text" class="text-task">
                 <label for="data">Data conclusão:</label>
                 <input type="date" name="" id="data">
-                <input class="btnTask" type="button" value="Adicionar Tarefa">
+                <input class="btnTask" type="button" value="Adicionar Tarefa" onclick=addTask()>
             </form>
         </div>
-        <div class="currentTasks">
+        <div class="currentTasks" id="container">
             <div class="Task">
                 <p>Faça carinho no nosso pet</p>
                 <P>Prazo 23/02/2026</P>
