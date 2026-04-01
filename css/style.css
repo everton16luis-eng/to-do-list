@@ -138,14 +138,6 @@ nav{
     cursor: pointer;
 }
 
-.text-task{
-    width: 50%;
-    height: 25px;
-    border-radius: 5px;
-    padding: 0px 5px;
-
-}
-
 .calendario{
     background-color: red;
 }
@@ -153,4 +145,55 @@ nav{
     background-color: var(--color-success);
     margin: 5px;
     border: 1px solid red;
+}
+.fieldTasks{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: baseline;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1.5px solid var(--color-border);
+    font-size: 13px;
+}
+.data-butons{
+    display: flex;
+    width: 100%;
+    gap: 5px;
+}
+
+#tarefas{
+    width: 100%;
+    height: 25px;
+    border-radius: 4px;
+    padding: 0px 5px;
+    
+}
+
+#data{
+    border-radius: 4px;
+    border: 1px solid var(--color-border);
+    padding: 0px 3px;
+    cursor: pointer;
+}
+#data:focus{
+    outline: none;
+    cursor: text;
+}
+button{
+    width: 75px;
+    padding: 0px 5px;
+    border: none;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 3px;
+    
+}
+button:hover{
+    cursor: pointer;
+    background-color: var(--color-hover);
+}
+button:active{
+    background-color: rgb(59, 59, 241);
 }

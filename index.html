@@ -15,31 +15,38 @@
         <img width="100" height="100" src="css/img/icons/logo.png" alt="">
         <div class="navMenu">
             <p>TO-DO-LIST</p>
-        <nav>
-            <a href="#">Nova Tarefa</a>
-            <a href="#">Tarefas Concluidas</a>
-            <a href="#">Tarefas Atrasadas</a>
-        </nav>
+            <nav>
+                <a href="#">Nova Tarefa</a>
+                <a href="#">Tarefas Concluidas</a>
+                <a href="#">Tarefas Atrasadas</a>
+            </nav>
         </div>
 
     </header>
     <div class="conteudo">
         <div class="addTasks">
-            <form class="taskAdd">
-                <label for="task">Tarefa:</label>
-                <input type="text" class="text-task">
-                <label for="data">Data conclusão:</label>
-                <input type="date" name="" id="data">
-                <input class="btnTask" type="button" value="Adicionar Tarefa" onclick=addTask()>
-            </form>
+            <fieldset class="fieldTasks">
+                <legend>Adicionar Tarefas</legend>
+                <label for="tarefas"></label>
+                <input type="text" id="tarefas" placeholder="Descreva a tarefa a ser executada">
+                <div class="data-butons">
+                    <label for="data">Prazo:</label>
+                    <input id="data" type="datetime-local">
+                    <button onclick=addTask()>Cadastrar</button>
+                    <button onclick="clearField('#tarefas')">Limpar</button>
+                </div>
+            </fieldset>
         </div>
         <div class="currentTasks" id="container">
-            <div class="Task">
-                <p>Faça carinho no nosso pet</p>
-                <P>Prazo 23/02/2026</P>
-            </div>
+            <fieldset>
+                <legend>Tarefas</legend>
+                <div class="Task">
+                    <p>Faça carinho no nosso pet</p>
+                    <P>Prazo 23/02/2026</P>
+                </div>
+            </fieldset>
         </div>
-        <div class="completedTasks">
+        <div class=" completedTasks">
             <p>Tasks Completas</p>
             <p>Leve nosso pet para passear</p>
             <P>concluida em 23/02/2026</P>
@@ -48,7 +55,7 @@
             <p></p>
             <p>Faça carinho no nosso pet</p>
             <P>Prazo encerrou em: 23/02/2026</P>
-        </div>        
+        </div>
     </div>
     <footer>Pézinho</footer>
 
