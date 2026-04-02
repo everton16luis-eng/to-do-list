@@ -26,7 +26,7 @@
     <div class="conteudo">
         <div class="addTasks">
             <fieldset class="fieldTasks">
-                <legend>Adicionar Tarefas</legend>
+                <legend>Adicionar Tarefas.</legend>
                 <label for="tarefas"></label>
                 <input type="text" id="tarefas" placeholder="Descreva a tarefa a ser executada">
                 <div class="data-butons">
@@ -37,24 +37,57 @@
                 </div>
             </fieldset>
         </div>
-        <div class="currentTasks" id="container">
-            <fieldset>
+        <div class="currentTasks">
+            <fieldset id="container">
                 <legend>Tarefas</legend>
-                <div class="Task">
-                    <p>Faça carinho no nosso pet</p>
-                    <P>Prazo 23/02/2026</P>
-                </div>
             </fieldset>
         </div>
         <div class=" completedTasks">
-            <p>Tasks Completas</p>
-            <p>Leve nosso pet para passear</p>
-            <P>concluida em 23/02/2026</P>
+            <fieldset id="concluidas">
+                <legend>Tarefas concluidas.</legend>
+                <!-- <div class="Task">
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore qui perferendis laborum, nam architecto ut. Ab delectus nemo autem earum necessitatibus aperiam voluptate! Error dolorum voluptas voluptatem possimus quae necessitatibus?</p>
+                        <div class="traco"></div>
+                        <div class="responsavel">
+                            <p>Solicitado por: + Solicitado + </p>
+                            <P>Prazo: + data + </P>
+                        </div>
+                    </div>
+                    <div class="butons">
+                        <img class="confirm" width="20" height="20" src="css/img/icons/check.png" alt="Task Concluida"
+                            title="Task Concluida" onclick="concluir(this)">
+                        <img class="confirm" width="20" height="20" src="css/img/icons/remove.png" alt="Remover"
+                            title="Remover Task" onclick="remover(this)">
+                    </div>
+                </div> -->
+            </fieldset>
         </div>
         <div class="esgotedTasks">
-            <p></p>
-            <p>Faça carinho no nosso pet</p>
-            <P>Prazo encerrou em: 23/02/2026</P>
+            <fieldset id="atrasadas">
+                <legend>Tarefas atrasadas.</legend>
+                <div class="Task">
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore qui perferendis laborum, nam architecto ut. Ab delectus nemo autem earum necessitatibus aperiam voluptate! Error dolorum voluptas voluptatem possimus quae necessitatibus?</p>
+                        <div class="traco"></div>
+                        <div class="responsavel">
+                            <p>Solicitado por: + Solicitado + </p>
+                            <P>Prazo: + data + </P>
+                        </div>
+                    </div>
+                    <div class="butons">
+                        <img class="confirm" width="20" height="20" src="css/img/icons/check.png" alt="Task Concluida"
+                            title="Task Concluida" onclick="concluir(this)">
+                        <img class="confirm" width="20" height="20" src="css/img/icons/remove.png" alt="Remover"
+                            title="Remover Task" onclick="remover(this)">
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div class="removedTasks">
+            <fieldset id="removidas">
+                <legend>Tarefas removidas.</legend>
+            </fieldset>
         </div>
     </div>
     <footer>Pézinho</footer>
