@@ -31,7 +31,7 @@
                 <input type="text" id="tarefas" placeholder="Descreva a tarefa a ser executada">
                 <div class="data-butons">
                     <label for="data">Prazo:</label>
-                    <input id="data" type="datetime-local">
+                    <input id="data" type="datetime-local" max="9999-12-31T23:59">
                     <button onclick=addTask()>Cadastrar</button>
                     <button onclick="clearField('#tarefas')">Limpar</button>
                 </div>
