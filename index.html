@@ -7,11 +7,11 @@
     <title>To-Do-List</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="css/img/icons/to-do-list.png" type="image/x-icon">
-    <script src="js/script.js"></script>
+
 </head>
 
 <body>
-    <header>
+    <header on>
         <img width="100" height="100" src="css/img/icons/logo.png" alt="">
         <div class="navMenu">
             <p>TO-DO-LIST</p>
@@ -42,46 +42,9 @@
                 <legend>Tarefas</legend>
             </fieldset>
         </div>
-        <div class=" completedTasks">
-            <fieldset id="concluidas">
-                <legend>Tarefas concluidas.</legend>
-                <!-- <div class="Task">
-                    <div class="text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore qui perferendis laborum, nam architecto ut. Ab delectus nemo autem earum necessitatibus aperiam voluptate! Error dolorum voluptas voluptatem possimus quae necessitatibus?</p>
-                        <div class="traco"></div>
-                        <div class="responsavel">
-                            <p>Solicitado por: + Solicitado + </p>
-                            <P>Prazo: + data + </P>
-                        </div>
-                    </div>
-                    <div class="butons">
-                        <img class="confirm" width="20" height="20" src="css/img/icons/check.png" alt="Task Concluida"
-                            title="Task Concluida" onclick="concluir(this)">
-                        <img class="confirm" width="20" height="20" src="css/img/icons/remove.png" alt="Remover"
-                            title="Remover Task" onclick="remover(this)">
-                    </div>
-                </div> -->
-            </fieldset>
-        </div>
         <div class="esgotedTasks">
             <fieldset id="atrasadas">
                 <legend>Tarefas atrasadas.</legend>
-                <div class="Task">
-                    <div class="text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore qui perferendis laborum, nam architecto ut. Ab delectus nemo autem earum necessitatibus aperiam voluptate! Error dolorum voluptas voluptatem possimus quae necessitatibus?</p>
-                        <div class="traco"></div>
-                        <div class="responsavel">
-                            <p>Solicitado por: + Solicitado + </p>
-                            <P>Prazo: + data + </P>
-                        </div>
-                    </div>
-                    <div class="butons">
-                        <img class="confirm" width="20" height="20" src="css/img/icons/check.png" alt="Task Concluida"
-                            title="Task Concluida" onclick="concluir(this)">
-                        <img class="confirm" width="20" height="20" src="css/img/icons/remove.png" alt="Remover"
-                            title="Remover Task" onclick="remover(this)">
-                    </div>
-                </div>
             </fieldset>
         </div>
         <div class="removedTasks">
@@ -89,9 +52,14 @@
                 <legend>Tarefas removidas.</legend>
             </fieldset>
         </div>
+        <div class=" completedTasks">
+            <fieldset id="concluidas">
+                <legend>Tarefas concluidas.</legend>
+            </fieldset>
+        </div>
     </div>
     <footer>Pézinho</footer>
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>
